@@ -1,0 +1,302 @@
+/*	Noir HTML5 mobile template  www.QRdvark.com  10jun11	*/
+/*	'Noir' by Azalea Software, Inc. is licensed under the Creative Commons Attribution 3.0 Unported License (CC BY 3.0)	*/
+/*	CSS inspired by Muthu http://discoverweb.info	*/
+/*		online CSS compression: http://www.refresh-sf.com/yui/	*/
+
+/* --------------------------------
+             GENERAL 
+-------------------------------- */
+* {
+margin:0;
+padding:0;
+color: #FFFFFF;
+
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+body{
+background: #000000;
+font-size:small;
+}
+
+h3,h4{
+text-decoration:underline;
+}
+
+a{
+color:red;
+text-decoration:none;
+}
+
+td
+{
+text-align:center;
+padding:2px;
+border:1px solid red;
+}
+
+td.left
+{
+text-align:left;
+padding:1px;
+border:1px solid purple;
+}
+
+span.spell{
+text-decoration:underline;
+color: #00ff00;
+ font-weight:bold;
+}
+
+/* --------------------------------
+      BACKGROUND GRADIENT 
+-------------------------------- */
+#background{
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #690404), color-stop(1, #000000));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top left, #690404 0%, #000000 100%);
+}
+
+/* --------------------------------
+           CSS MENUS 
+-------------------------------- */
+#cssmenu{
+border-radius: 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+border: 1px solid #800000;
+}
+
+#cssmenu ul {
+list-style-type:none;
+width:auto;
+position:relative;
+display:block;
+height:12px;
+font-size:.8em;
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #690404), color-stop(1, #000000));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom right, #690404 0%, #000000 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top left, #690404 0%, #000000 100%);
+font-family:Verdana,Helvetica,Arial,sans-serif;
+border:1px solid #000;
+margin:0;
+padding:0;
+}
+
+#cssmenu li {
+display:block;
+float:left;
+margin:0;
+padding:0;
+}
+#cssmenu li a {
+float:left;
+color:#A79787;
+text-decoration:none;
+padding:0px 6px 0;
+font-weight:normal;
+}
+#cssmenu li a:hover,
+#cssmenu .active {
+color:#fff;
+background:url(img/bg.png) repeat-x top left;
+text-decoration:none;
+}
+#cssmenu .active a {
+color:#fff;
+font-weight:700;
+}
+#cssmenu ul{
+background-color:#B11718;
+}
+#cssmenu li a:hover, #cssmenu li.active {
+background-color:#DE3330;
+}
+
+/* --------------------------------
+         IMG ALIGN
+-------------------------------- */
+.right{
+position:relative;
+float:left;
+width:30px;
+}
+
+/* --------------------------------
+         PROGRESS BARS 
+-------------------------------- */
+.meter { 
+	height: 20px;  /* Can be anything */
+	position: relative;
+	margin: 5px 0 5px 0; /* Just for demo spacing */
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 0px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+	background-image: -webkit-gradient(
+	  linear,
+	  left bottom,
+	  left top,
+	  color-stop(0, rgb(43,194,83)),
+	  color-stop(1, rgb(84,240,84))
+	 );
+	background-image: -moz-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	-webkit-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
+}
+.meter > span:after, .animate > span > span {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: 
+	   -webkit-gradient(linear, 0 0, 100% 100%, 
+	      color-stop(.25, rgba(255, 255, 255, .2)), 
+	      color-stop(.25, transparent), color-stop(.5, transparent), 
+	      color-stop(.5, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, transparent), to(transparent)
+	   );
+	background-image: 
+-moz-linear-gradient(
+  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	z-index: 1;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 30px 50px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+
+.animate > span:after {
+	display: none;
+}
+
+@-webkit-keyframes move {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 50px 50px;
+    }
+}
+
+.orange > span {
+	background-color: #f1a165;
+	background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+	background-image: -webkit-linear-gradient(#f1a165, #f36d0a); 
+}
+.red > span {
+	background-color: #f0a3a3;
+	background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
+	background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+}
+.yellow > span {
+	background-color: #ffff00;
+	background-image: -moz-linear-gradient(top, #ffff00, #ff1a165);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffff00),color-stop(1, #ff1a165));
+	background-image: -webkit-linear-gradient(#ffff00, #ff1a165);
+}
+.green > span {
+	background-color: #00ff00;
+	background-image: -moz-linear-gradient(top, #00ff00, #336633);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #00ff00),color-stop(1, #336633));
+	background-image: -webkit-linear-gradient(#00ff00;, #336633);
+}
+.purple > span {
+	background-color: #cc3366;
+	background-image: -moz-linear-gradient(top, #cc3366, #660066);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #cc3366),color-stop(1, #660066));
+	background-image: -webkit-linear-gradient(#cc3366, #f660066);
+}
+.pink > span {
+	background-color: #ff0099;
+	background-image: -moz-linear-gradient(top, #ff0099, #ffcccc);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ff0099),color-stop(1, #ffcccc));
+	background-image: -webkit-linear-gradient(#ff0099, #fffcccc);
+}
+
+.aqua > span {
+	background-color: #9966ff;
+	background-image: -moz-linear-gradient(top, #9966ff, #66ffff);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #9966ff),color-stop(1, #66ffff));
+	background-image: -webkit-linear-gradient(#9966ff, #66ffff);
+}
+
+
+.nostripes > span > span, .nostripes > span:after {
+	-webkit-animation: none;
+	background-image: none;
+}
